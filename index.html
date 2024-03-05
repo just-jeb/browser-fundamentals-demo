@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Browser Fundamentals</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div>
+        <select name="scripts" id="scripts">
+            <option value="main" selected="selected">No fix</option>
+            <option value="main-bob-fix">Bob's fix</option>
+            <option value="main-wrong-fix">Wrong fix</option>
+            <option value="main-proper-timeout-fix">Proper setTimeout fix</option>
+            <option value="main-yield-fix">yieldToMain fix</option>
+            <option value="main-scheduler-fix">Scheduler fix</option>
+            <option value="main-worker-fix">Worker fix</option>
+        </select>
+        <span>
+            <input type="checkbox" id="transition" value="transition">
+            <label for="transition">Enable transition effect</label>
+        </span>
+    </div>
+    <div class="block">
+        <button id="cta" class="btn" onClick="hack()">
+            <h4>Hack</h4>
+        </button>
+        <h3>Click to hack</h3>
+    </div>
+
+</body>
+<script src="./utils.js"></script>
+<script src="./ui.js"></script>
+
+</html>
